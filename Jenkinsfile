@@ -3,12 +3,27 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				echo 'Building...'
+				input('Should We Continue?)
 			}
 		}
 		stage('Test') {
-			steps {
-				echo 'Testing...'
+			parallel {
+				stage('Unit Test') {
+					steps {
+						echo 'Running Unit Test...'
+					}
+				}
+				stage('Integration Test') {
+					agent {
+						docker {
+							reuseNode false
+							image 'ubuntu'
+						}
+					}
+					steps {
+						echo 'Running the integration test'
+					}
+				}
 			}
 		}
 		stage('Deploy') {
