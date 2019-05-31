@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				input('Should We Continue?)
+				input('Should We Continue?')
 			}
 		}
 		stage('Test') {

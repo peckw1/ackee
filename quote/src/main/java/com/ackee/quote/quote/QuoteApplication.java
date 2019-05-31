@@ -1,13 +1,13 @@
-package com.ackee.controller.ackee;
+package com.ackee.quote.quote;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AckeeApplication {
+public class QuoteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AckeeApplication.class, args);
+		SpringApplication.run(QuoteApplication.class, args);
 	}
 
 }

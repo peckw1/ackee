@@ -1,4 +1,4 @@
-package com.ackee.controller.ackee;
+package com.ackee.quote.quote;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AckeeApplicationTests {
+public class QuoteApplicationTests {
 
 	@Test
 	public void contextLoads() {
